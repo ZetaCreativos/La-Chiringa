@@ -22,10 +22,13 @@ body, html {height: 100%}
     <p>La Chiringa</p>
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
-    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Desayunos</button></p>
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-orange">Desayunos</button></p>
     <p><button onclick="document.getElementById('cafeteria').style.display='block'" class="w3-button w3-orange">Cafetería</button></p>  
-    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
-  </div>
+    <p><button onclick="document.getElementById('frios').style.display='block'" class="w3-button w3-orange">Cafés y Tés fríos</button></p>
+    <p><button onclick="document.getElementById('zumos').style.display='block'" class="w3-button w3-orange">Zumos</button></p>  
+    <p><button onclick="document.getElementById('icecream').style.display='block'" class="w3-button w3-orange">Sorbetes</button></p>  
+      
+   </div>
   <div class="w3-display-bottomleft w3-container">
     <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
     <p class="w3-large">42 village St, New York</p>
@@ -38,7 +41,7 @@ constante, siguiendo las recomendaciones de las autoridades sanitarias.</p>
 <div id="menu" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-orange w3-display-container">
-      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
       <h1>Pitufos</h1>
     </div>
     <div class="w3-container">
@@ -82,7 +85,7 @@ constante, siguiendo las recomendaciones de las autoridades sanitarias.</p>
 <div id="cafeteria" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-orange w3-display-container">
-      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <span onclick="document.getElementById('cafeteria').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
       <h1>Cafetería</h1>
     </div>
     <div class="w3-container">
@@ -94,76 +97,119 @@ constante, siguiendo las recomendaciones de las autoridades sanitarias.</p>
         <p class="w3-text-grey">Café doble con espuma de leche.</p>
         <h5>Capuchino ESPECIAL <b>2.90 €</b></h5>
         <p class="w3-text-grey">Café doble con espuma de leche,nata montada y canela.</p>
-        <h5>Paté Ibérico <b>1.70 €</b></h5>
-        <h5>Sobrasada <b>1.70 €</b></h5>
-        <h5>Zurrapa <b>1.70 €</b></h5>
-        <h5>Jamón Serrano <b>1.70 €</b></h5>
-        <h5>Bacon <b>1.80 €</b></h5>
-        <h5>Salchichón de Málaga <b>1.90 €</b></h5>
-        <h5>Queso Manchego o Fresco <b>1.90 €</b></h5>
-        <h5>Lomo al Horno <b>2.00 €</b></h5>
-        <h5>Melba Canutera <b>2.00 €</b></h5>
-        <h5>Palometa <b>2.00 €</b></h5>
-        <h5>Catalana (Tomate y jamón Serrano) <b>1.90 €</b></h5>
-        <h5>Catalana de Salchichón <b>2.10 €</b></h5>
-        <h5>Catalana de Manchego o Fresco <b>2.10 €</b></h5>
-        <h5>Catalana de Lomo <b>2.20 €</b></h5>
-        <h5>Mixto <b>2.00 €</b></h5>
-        <h5>Sandich mixto XXL <b>2.50 €</b></h5>
-        <h5>Extra de queso (manchego o fresco) <b>0.50 €</b></h5>
-        <h5>Extra de tomate/mayonesa/mantequilla/mermelada <b>0.20 €</b></h5>
+        <h5>Café Irlandés 3 colores <b>4.70 €</b></h5>
+        <p class="w3-text-grey">Café doble,whisky, nata montada y canela.</p>
+        <h5>Café de Kingston 4 colores <b>4.70 €</b></h5>
+        <p class="w3-text-grey">Café doble,licor 43, leche condensada y espuma de leche.</p>
+        <h5>Cubanito <b>4.70 €</b></h5>
+        <p class="w3-text-grey">Café doble,ron añejo, nata montada y azúcar moreno.</p>
+        <h5>Suplemento HIELO / LECHE SIN LACTOSA <b>0.10 €</b></h5>
     </div>
     <div class="w3-container w3-orange">
-      <h1>Panes</h1>
+      <h1>Cafés Especiales</h1>
     </div>
     <div class="w3-container">
-      <h5>Integral <b>Igual Pitufo</b></h5>
-        <h5>Soja o Multicereal <b>Pitufo + 0.20 €</b></h5>
-        <h5>Viena o Mollete <b>Pitufo + 0.50 €</b></h5>
-        <h5>Croisant o centeno <b>Pitufo + 0.50 €</b></h5>
+      <h5>Kalahary <b>1.90 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con piel de lión y naranja.</p>
+        <h5>Marrakesh <b>1.90 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con hierbabuena y anis estrellado.</p>
+        <h5>Estambul <b>1.90 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con enebro y cardomomo.</p>
+        <h5>Nazarí <b>1.90 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con canela y piel de naranja.</p>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu frios -->
+<div id="frios" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('frios').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
+      <h1>Cafés Frappés</h1>
+        <h3><p class="w3-text-white">Café con hielo picado batido.</p></h3>
+    </div>
+     <div class="w3-container">
+        <h5>Café Frappé <b>2.20 €</b></h5>
+        <p class="w3-text-grey">Café recién hecho.</p> 
+        <h5>Café Bayley’s Frappé <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con Bayley’s.</p> 
+        <h5>Capuchino Frappé <b>3,50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con nata montada y canela.</p>
+        <h5>Claroscuro <b>3.80 €</b></h5>
+        <p class="w3-text-grey">Café frappé con helado de vainilla.</p>
+        <h5>Old Peter <b>4.50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con whisky,helado de vainilla y nueces.</p>
+        <h5>Fidel <b>4.50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con ron añejo y helado de chocolate.</p>
+     </div>
+    <div class="w3-container w3-orange">
+      <h1>Tés Frappés</h1>
+        <h3><p class="w3-text-white">Té con hielo picado batido.</p></h3>
+    </div>
+    <div class="w3-container">
+      <h5>Té del Riff <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té moruno con hierbabuena.</p>
+        <h5>Té del Bosque <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té rooibos frutos rojos con frutas del bosque.</p>
+        <h5>Té Canario <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té negro de plátano con fruta natural.</p>
+        <h5>Té del Trópico <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Infusión de naranja y piña con fruta natural.</p>
+        <h5>Té de Kachemira <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té pakistaní con leche y canela.</p>
     </div>
    </div>
 </div>
 
-<!-- Contact Modal -->
-<div id="contact" class="w3-modal">
+<!-- Menu zumos -->
+<div id="zumos" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
-      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Contact</h1>
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('zumos').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
+      <h1>Zumos</h1>
+        <h3><p class="w3-text-white">De frutas naturales según temporada.</p></h3>
+    </div>
+     <div class="w3-container">
+        <h5>Fresa </h5>
+         <h5>Frutas del bosque </h5>
+         <h5>Jengibre </h5>
+         <h5>Kiwi </h5>
+         <h5>Mandarina </h5>
+         <h5>Mango </h5>
+         <h5>Melón </h5>
+         <h5>Naranja </h5>
+         <h5>Papaya </h5>
+         <h5>Piña </h5>
+         <h5>Platano </h5>
+         <h5>Sandía </h5>
+         <p class="w3-text-grey">Puedes combinar 2 frutas.</p>
+         
+         <h5>Con agua <b>3.70 €</b></h5>
+         <h5>Con leche <b>4.00 €</b></h5>
+         <h5>Con yogurt <b>4.20 €</b></h5>
+         <h5>De naranja solo (tubo) <b>2.50 €</b></h5>
+     </div>
+  </div>
+    
+
+<!-- Menu Sorbetes -->
+<div id="icecream" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('icecream').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
+      <h1>Sorbetes</h1>
     </div>
     <div class="w3-container">
-      <p>Reserve a table, ask for today's special or just send us a message:</p>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
-      </form>
+        <h5>Limón y hierbabuena <b>3.50 €</b></h5>
+        <h5>Naranja natural <b>3.50 €</b></h5>
+        <h5>Cava y helado de limón <b>6.00 €</b></h5>
     </div>
-  </div>
+   </div>
 </div>
 
     
-    <div id="contact" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
-      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
-      <h1>Contact</h1>
-    </div>
-    <div class="w3-container">
-      <p>Reserve a table, ask for today's special or just send us a message:</p>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
-      </form>
-    </div>
-  </div>
-</div>
+
 </body>
 </html>
 
