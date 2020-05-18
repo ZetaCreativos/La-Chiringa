@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>La Chiringa</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=arial">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h5 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url(#);
+  background-image: url('/w3images/onepage_restaurant.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -17,30 +17,32 @@ body, html {height: 100%}
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-text-black">
+<div class="bgimg w3-display-container w3-text-white">
   <div class="w3-display-middle w3-jumbo">
     <p></p>
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-orange">Desayunos</button></p>
-    <p><button onclick="document.getElementById('cafeteria').style.display='block'" class="w3-button w3-orange">Cafetería</button></p>  
-    <p><button onclick="document.getElementById('frios').style.display='block'" class="w3-button w3-orange">Cafés y Tés fríos</button></p>
-    <p><button onclick="document.getElementById('zumos').style.display='block'" class="w3-button w3-orange">Zumos</button></p>  
-    <p><button onclick="document.getElementById('icecream').style.display='block'" class="w3-button w3-orange">Sorbetes</button></p>  
-      
+    <p><button onclick="document.getElementById('cafeteria').style.display='block'" class="w3-button w3-orange">Cafetería</button></p>
+    <p><button onclick="document.getElementById('frios').style.display='block'" class="w3-button w3-orange">Cafés y Tés frios</button></p>
+    <p><button onclick="document.getElementById('zumos').style.display='block'" class="w3-button w3-orange">Zumos</button></p>
+    <p><button onclick="document.getElementById('menu2').style.display='block'" class="w3-button w3-orange">Sorbetes</button></p>
+    <p><button onclick="document.getElementById('menu3').style.display='block'" class="w3-button w3-orange">Tetería</button></p>  
+    <p><button onclick="document.getElementById('menu4').style.display='block'" class="w3-button w3-orange">Crepes Dulces</button></p>  
+    <br><br><br><br>
    </div>
   <div class="w3-display-bottomleft w3-container">
     <p class="w3-xlarge"></p>
     <p class="w3-large"></p>
-    <p></p>
   </div>
 </div>
+
 
 <!-- Menu Desayunos -->
 <div id="menu" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-orange w3-display-container">
-      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
       <h1>Pitufos</h1>
     </div>
     <div class="w3-container">
@@ -76,15 +78,32 @@ body, html {height: 100%}
         <h5>Soja o Multicereal <b>Pitufo + 0.20 €</b></h5>
         <h5>Viena o Mollete <b>Pitufo + 0.50 €</b></h5>
         <h5>Croisant o centeno <b>Pitufo + 0.50 €</b></h5>
+        <br>
     </div>
    </div>
 </div>
+    
+<!-- Menu2 Sorbetes -->
+<div id="menu2" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu2').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Sorbetes</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Limón y hierbabuena <b>3.50 €</b></h5>
+        <h5>Naranja natural <b>3.50 €</b></h5>
+        <h5>Cava y helado de limón <b>6.00 €</b></h5>
+        <br>
+    </div>
+  </div>
+</div>    
     
     <!-- Menu Cafe -->
 <div id="cafeteria" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-orange w3-display-container">
-      <span onclick="document.getElementById('cafeteria').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
+      <span onclick="document.getElementById('cafeteria').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
       <h1>Cafetería</h1>
     </div>
     <div class="w3-container">
@@ -116,6 +135,118 @@ body, html {height: 100%}
         <p class="w3-text-grey">Café solo aromatizado con enebro y cardomomo.</p>
         <h5>Nazarí <b>1.90 €</b></h5>
         <p class="w3-text-grey">Café solo aromatizado con canela y piel de naranja.</p>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Crepes -->
+<div id="menu4" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu4').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Crepes dulces</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Azúcar y limón <b>2.50 €</b></h5>
+        <h5>Mermeladas varias <b>2.50 €</b></h5>
+        <p class="w3-text-grey">(a elección)</p>
+        <h5>Miel <b>2.50 €</b></h5>
+        <p class="w3-text-grey">de caña o mil flores.</p>
+        <h5>Chocolate <b>2.50 €</b></h5>
+        <h5>Nocilla <b>2.50 €</b></h5>
+        <h5>Dulce de leche <b>3.00 €</b></h5>
+        <h5>Bananita Dolca <b>3.20 €</b></h5>
+        <p class="w3-text-grey">Plátano y chocolate.</p>
+        <h5>Banana Split <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Plátano,dulce de leche y nueces.</p>
+        <h5>Bola de nieve <b>3.80 €</b></h5>
+        <p class="w3-text-grey">Chocolate,ralladura de coco y helado de vainilla.</p>
+        <h5>Don Pedro <b>4.00 €</b></h5>
+        <p class="w3-text-grey">Centro de helado de vainilla,nueces,nata montada y whisky.</p>
+        <h5>Suplemento bola de helado extra <b>1.50 €</b></h5>
+        <h5>Suplemento nata montada <b>1.00 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+    <!-- Menu Teteria -->
+<div id="menu3" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu3').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Tés Negros</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Ceylán <b>2.10 €</b></h5>
+        <p class="w3-text-grey">Puro té de Sri Lanka . Agua o Leche.</p>
+        <h5>Pakistaní <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Con canela, clavo y cardomomo. Agua o Leche.</p>
+        <h5>Ruta de la seda <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Rosas, manzana, canela, almendra,vainilla y cítricos.Agua o Leche.</p>
+        <h5>Jazmín <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Hojas chinas con flores de Jazmín y delicada fragancia.</p>
+        <h5>Medina Azahara <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Té indio, cáscara de limón,clavo, pétalos de flores,almendra y vainilla.</p>
+        <h5>Mil flores <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Té de Ceylán e India, aromas de frutos tropicales, cáscara de limón,clavo, pétalos de flores,almendra y vainilla.</p>
+        <h5>Toffe <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Mezcla de tés de Ceylán, trozos de Toffe, vainilla y aromade nata. Leche.</p>
+        <h5>Chai Malayo <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Con malva, lavanda, pétalos de rosas y aroma natural.</p>
+        <h5>Americano <b>3.00 €</b></h5>
+        <p class="w3-text-grey">Té de Ceylán, canela, cáscara de limón y naranja, Licor 43.Leche.</p>
+        <h5>Suplemento HIELO / LECHE SIN LACTOSA <b>0.10 €</b></h5>
+    </div>
+    <div class="w3-container w3-orange">
+      <h1>Tés verdes</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Moruno <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Té verde enriquecido con hierbabuena.</p>
+        <h5>Tunecino <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té verde con hierbabuena y piñones.</p>
+        <h5>Mil y una noches <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Mezcla de té verde y negro, melocotón y pétalos de rosa.</p>
+        <h5>Noche árabe <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Mezcla de tés verde y  negro con aroma a naranjay hojas de Azahar.</p>
+        <h5>Ginseng <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Té de Formosa enriquecido con  Ginseng.</p>
+        <h5>Sueño de la Alhambra <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Té de Yunnan, banana, manzana y naranja.</p>
+        <h5>Jardín Secreto <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Té verde chino y té negro, Flores de Jazmín y vainilla.</p>
+        <h5>Suplemento HIELO / LECHE SIN LACTOSA <b>0.10 €</b></h5>
+    </div>
+      <div class="w3-container w3-orange">
+      <h1>Tés Roibos</h1>
+      <h3><p class="w3-text-white">Té africano SIN TEÍNA.</p></h3>     
+    </div>
+    <div class="w3-container">
+      <h5>Aires de África <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Roitea,cacao,,almendra y aroma natural de whisky.</p>
+        <h5>Amanecer africano <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Rooibos con trozos de chocolate y vainilla Bourbon.</p>
+        <h5>Frutos rojos <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Roitea de grosella negra,fresas,arándanos y cerezas.</p>
+        <h5>Desierto mágico <b>2.30 €</b></h5>
+        <p class="w3-text-grey">Rooibos con limón grass,naranja,piña,hierba luisa y caléndula.</p>
+        <h5>Suplemento HECHO EN LECHE <b>0.10 €</b></h5>
+     </div>
+      <div class="w3-container w3-orange">
+      <h1>Otros Tés</h1>
+      </div>
+    <div class="w3-container">
+        <h5>Té Rojo <b>2.10 €</b></h5>
+        <p class="w3-text-grey">Clásico té chino de Puh Erh, depurativo y adelgazante.</p>
+        <h5>Té Blanco <b>2.10 €</b></h5>
+        <p class="w3-text-grey">Té chino PAI MU TAN de hoja larga y tintura muy clara.</p>
+        <h5>De Frutas <b>2.10 €</b></h5>
+        <p class="w3-text-grey">Naranja y piña / Fresa / Plátano / Mango / Baya Salvaje.</p>
+        <h5>Infusiones Naturales <b>2.10 €</b></h5>
+        <p class="w3-text-grey">Manzanilla / Menta Poleo / Tila.</p>
+        <h5>Suplemento HECHO EN LECHE <b>0.10 €</b></h5>
+        <br>
     </div>
    </div>
 </div>
@@ -124,7 +255,7 @@ body, html {height: 100%}
 <div id="frios" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-orange w3-display-container">
-      <span onclick="document.getElementById('frios').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
+      <span onclick="document.getElementById('frios').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
       <h1>Cafés Frappés</h1>
         <h3><p class="w3-text-white">Café con hielo picado batido.</p></h3>
     </div>
@@ -157,6 +288,7 @@ body, html {height: 100%}
         <p class="w3-text-grey">Infusión de naranja y piña con fruta natural.</p>
         <h5>Té de Kachemira <b>3.50 €</b></h5>
         <p class="w3-text-grey">Té pakistaní con leche y canela.</p>
+        <br>
     </div>
    </div>
 </div>
@@ -165,7 +297,7 @@ body, html {height: 100%}
 <div id="zumos" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-orange w3-display-container">
-      <span onclick="document.getElementById('zumos').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
+      <span onclick="document.getElementById('zumos').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
       <h1>Zumos</h1>
         <h3><p class="w3-text-white">De frutas naturales según temporada.</p></h3>
     </div>
@@ -188,25 +320,11 @@ body, html {height: 100%}
          <h5>Con leche <b>4.00 €</b></h5>
          <h5>Con yogurt <b>4.20 €</b></h5>
          <h5>De naranja solo (tubo) <b>2.50 €</b></h5>
+         <br>
      </div>
   </div>
     
-
-<!-- Menu Sorbetes -->
-<div id="icecream" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-orange w3-display-container">
-      <span onclick="document.getElementById('icecream').style.display='none'" class="w3-button w3-display-topright w3-large">cerrar</span>
-      <h1>Sorbetes</h1>
-    </div>
-    <div class="w3-container">
-        <h5>Limón y hierbabuena <b>3.50 €</b></h5>
-        <h5>Naranja natural <b>3.50 €</b></h5>
-        <h5>Cava y helado de limón <b>6.00 €</b></h5>
-    </div>
-   </div>
-</div>
-
+    
     
 
 </body>
