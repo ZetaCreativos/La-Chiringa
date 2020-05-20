@@ -22,6 +22,7 @@ body, html {height: 100%}
     <p></p>
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('chiringa').style.display='block'" class="w3-button w3-black">La Chiringa</button></p>    
     <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-orange">Desayunos</button></p>
     <p><button onclick="document.getElementById('cafeteria').style.display='block'" class="w3-button w3-orange">Cafetería</button></p>
     <p><button onclick="document.getElementById('frios').style.display='block'" class="w3-button w3-orange">Cafés y Tés frios</button></p>
@@ -40,6 +41,20 @@ body, html {height: 100%}
   </div>
 </div>
 
+<!-- Menu Chiringa -->
+<div id="chiringa" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('chiringa').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>La Chiringa</h1>
+    </div>
+    <div class="w3-container">
+        <h4><b>MANTENGA LAS DISTANCIAS DE SEGURIDAD</b></h4>
+        <h5>En nuestras intalaciones realizamos un protocolo de limpieza y desinfección constante, siguiendo las recomendaciones de las autoridades sanitarias. </h5>
+        <br>
+    </div>
+   </div>
+</div>
 
 <!-- Menu Desayunos -->
 <div id="menu" class="w3-modal">
